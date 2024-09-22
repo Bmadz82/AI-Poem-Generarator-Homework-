@@ -3,23 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Poem Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI French Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Poem Generator</h1>
-        <p>Coded with 💜 by Bella Madzhie</p>
+        <h1>AI French Poem Generator</h1>
       </header>
 
       <main>
         <div class="form-container">
-          <form id="generator-form">
-            <label for="user-instructions"></label>
+          <form id="poem-generator-form">
             <input
               type="text"
-              id="user-instructions"
               placeholder="Enter the topic of a French poem"
               autofocus
               required
@@ -29,16 +28,28 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <div class="hint">Flower, Paris or cheese </div>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
         </div>
         <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
-        <p>This AI project was coded by <a href="https://github.com/Bmadz82" target="_blank">Bella Madzhie</a> and is <a href="https://bellajoke.netlify.app" target="_blank">hosted on Netlify</a>.</p>
+        This AI project was coded by
+        <a href="https://github.com/Bmadz82" target="_blank">Belinda ad</a>
+        and is
+        <a
+          href="https://github.com/Bmadz82/AI-Poem-Generarator-Homework-"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://bellajoke.netlify.app//" target="_blank"
+          >hosted on Netlify</a
+        >.
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
