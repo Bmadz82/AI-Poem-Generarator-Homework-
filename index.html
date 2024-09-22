@@ -16,19 +16,22 @@
       <main>
         <div class="form-container">
           <form id="generator-form">
-            <label for="user-instructions">Rise of the coders:</label>
+            <label for="user-instructions"></label>
             <input
               type="text"
               id="user-instructions"
-              placeholder="Type a topic for the poem (e.g., Coders, Flowers)"
+              placeholder="Enter the topic of a French poem"
+              autofocus
               required
-              class="input-field"
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
             />
-            <input type="submit" class="submit-button" value="Generate Poem" />
+            <input type="submit" class="submit-button" />
           </form>
-
-          <div class="result hidden" id="generated-content"></div>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
         </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
